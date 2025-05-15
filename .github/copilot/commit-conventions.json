@@ -1,0 +1,47 @@
+{
+	"commitMessageConventions": {
+		"types": ["feat", "fix", "docs", "style", "refactor", "test", "chore"],
+		"scopeRequired": true,
+		"subjectRequired": true,
+		"maxLineLength": {
+			"subject": 30,
+			"body": 50
+		},
+		"format": "<type>(<scope>): <subject>",
+		"examples": [
+			"feat(tema2): add array exercise",
+			"fix(tema3): fix loop bug",
+			"docs(tema1): update readme",
+			"style(tema4): format code",
+			"test(tema5): add tests",
+			"chore(tema6): update deps"
+		],
+		"scopes": [
+			"tema1",
+			"tema2",
+			"tema3",
+			"tema4",
+			"tema5",
+			"tema6",
+			"tema7",
+			"tema8",
+			"sim1",
+			"sim2",
+			"sim3",
+			"sim4",
+			"sim5",
+			"sim6",
+			"sim7",
+			"sim8"
+		],
+		"descriptions": {
+			"feat": "Nuevas características o funcionalidades",
+			"fix": "Corrección de errores",
+			"docs": "Cambios en la documentación",
+			"style": "Cambios que no afectan el significado del código (espacios, formato, etc)",
+			"refactor": "Cambio de código que no corrige errores ni añade funcionalidad",
+			"test": "Añadir o modificar pruebas",
+			"chore": "Tareas de mantenimiento, actualizaciones de dependencias, etc"
+		}
+	}
+}
