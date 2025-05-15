@@ -93,7 +93,7 @@ function Ej02_Variables_Tipos() {
 		}
 		// Constantes
 		consoleLog("\n=== Constantes con const ===");
-		const PI = 3.14159;
+		let PI = 3.14159;
 		consoleLog(`PI = ${PI}`);
 
 		try {

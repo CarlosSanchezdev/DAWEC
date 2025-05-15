@@ -5,6 +5,7 @@
 
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import ListadoNotas from "../../ejercicios/tema8/EjercicioCompleto/ListadoNotas";
 
 // Importación diferida de ejercicios
 const Ej01_Mecanismos_Asincronos = lazy(() => import("../../ejercicios/tema8/Ej01_Mecanismos_Asincronos"));
@@ -52,6 +53,12 @@ function Tema8() {
 			title: "Async/Await",
 			path: "async-await",
 			description: "Funciones asíncronas, manejo de errores, paralelismo",
+		},
+		{
+			id: "ejercicio-completo",
+			title: "Ejercicio Completo",
+			path: "ejercicio-completo",
+			description: "Aplicación de los conceptos aprendidos en un ejercicio completo",
 		},
 	];
 	return (
@@ -171,6 +178,22 @@ function Tema8() {
 							<h3>Ejercicio: Async/Await</h3>
 							<Suspense fallback={<div className="loading dark-theme">Cargando ejercicio...</div>}>
 								<Ej05_Async_Await />
+							</Suspense>
+						</div>
+					}
+				/>
+				<Route
+					path="/ejercicio-completo"
+					element={
+						<div className="ejercicio-container dark-theme">
+							<button
+								onClick={() => navigate("/tema/8")}
+								className="back-button dark-theme">
+								← Volver a Tema 8
+							</button>
+							<h3>Ejercicio Completo</h3>
+							<Suspense fallback={<div className="loading dark-theme">Cargando ejercicio...</div>}>
+								<ListadoNotas />
 							</Suspense>
 						</div>
 					}
