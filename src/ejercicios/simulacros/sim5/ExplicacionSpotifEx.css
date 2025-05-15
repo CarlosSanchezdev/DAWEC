@@ -1,0 +1,131 @@
+/* 
+  Estilos para el componente de Explicación SpotifEx 
+  Este archivo contiene los estilos específicos para la visualización
+  de la explicación técnica del ejercicio SpotifEx
+*/
+
+.explicacion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.explicacion-titulo {
+    color: #1db954;
+    /* Color verde Spotify */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #1db954;
+    padding-bottom: 10px;
+}
+
+.explicacion-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.explicacion-apartados {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apartado {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.apartado h2 {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.apartado-contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apartado-descripcion {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.apartado-codigo {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.apartado-codigo pre {
+    margin: 0;
+    overflow-x: auto;
+}
+
+.apartado-codigo code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+    display: block;
+    line-height: 1.5;
+    color: #333;
+}
+
+.explicacion-estructura {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.explicacion-estructura h2 {
+    color: #1db954;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.explicacion-estructura pre {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.explicacion-conclusion {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.explicacion-conclusion h2 {
+    color: #1db954;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.explicacion-conclusion ul {
+    padding-left: 20px;
+}
+
+.explicacion-conclusion li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}

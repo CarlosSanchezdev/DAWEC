@@ -1,0 +1,302 @@
+/**
+ * Estilos para el ejercicio de Modelo de Eventos
+ */
+
+/* Contenedor general del ejercicio (tema oscuro) */
+.ejercicio-content.dark-theme {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Secciones de conceptos (tema oscuro) */
+.concepto-section.dark-theme {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.concepto-section.dark-theme h4 {
+    color: #89b4fa;
+    border-bottom: 1px solid #45475a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.concepto-section.dark-theme h5 {
+    color: #a6e3a1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.concepto-section.dark-theme h6 {
+    color: #f5c2e7;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.concepto-section.dark-theme p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Área de demostración de eventos (tema oscuro) */
+.demo-container.dark-theme {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #313244;
+    border-radius: 6px;
+}
+
+.controls.dark-theme {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.toggle-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.toggle-control input {
+    cursor: pointer;
+}
+
+.clear-btn.dark-theme {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.clear-btn.dark-theme:hover {
+    background-color: #eba0ac;
+    transform: translateY(-2px);
+}
+
+/* Área de demostración con cajas anidadas (tema oscuro) */
+.event-demo-area.dark-theme {
+    margin: 20px 0;
+}
+
+.outer-box.dark-theme {
+    width: 100%;
+    height: 200px;
+    background-color: #585b70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.outer-box.dark-theme:hover {
+    background-color: #6c7086;
+}
+
+.middle-box.dark-theme {
+    width: 70%;
+    height: 140px;
+    background-color: #45475a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.middle-box.dark-theme:hover {
+    background-color: #585b70;
+}
+
+.inner-box.dark-theme {
+    width: 60%;
+    height: 80px;
+    background-color: #313244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+    color: #cdd6f4;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.inner-box.dark-theme:hover {
+    background-color: #45475a;
+}
+
+/* Registro de eventos (tema oscuro) */
+.event-log.dark-theme {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1e1e2e;
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #313244;
+}
+
+.empty-log.dark-theme {
+    color: #7f849c;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+.log-list.dark-theme {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.log-item.dark-theme {
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    border-left: 3px solid transparent;
+    font-family: monospace;
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+.log-item.capture.dark-theme {
+    border-left-color: #fab387;
+    background-color: rgba(250, 179, 135, 0.1);
+}
+
+.log-item.target.dark-theme {
+    border-left-color: #a6e3a1;
+    background-color: rgba(166, 227, 161, 0.1);
+}
+
+.log-item.bubble.dark-theme {
+    border-left-color: #89b4fa;
+    background-color: rgba(137, 180, 250, 0.1);
+}
+
+.log-item.warning.dark-theme {
+    border-left-color: #f38ba8;
+    background-color: rgba(243, 139, 168, 0.1);
+}
+
+.log-item.info.dark-theme {
+    border-left-color: #b4befe;
+    background-color: rgba(180, 190, 254, 0.1);
+}
+
+.timestamp.dark-theme {
+    color: #cba6f7;
+    font-weight: bold;
+}
+
+.message.dark-theme {
+    flex: 1;
+}
+
+/* Ejemplo de código (tema oscuro) */
+.code-example.dark-theme {
+    margin: 20px 0;
+}
+
+.code-snippet.dark-theme {
+    background-color: #11111b;
+    color: #89b4fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    border-left: 4px solid #cba6f7;
+}
+
+/* Sección de closures (tema oscuro) */
+.closure-section.dark-theme {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #313244;
+}
+
+.closure-demo.dark-theme {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #313244;
+    border-radius: 6px;
+}
+
+.counter-display.dark-theme {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1e1e2e;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.counter-value.dark-theme {
+    font-weight: bold;
+    color: #f9e2af;
+    font-size: 24px;
+}
+
+.increment-btn.dark-theme {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 15px;
+    transition: all 0.2s;
+}
+
+.increment-btn.dark-theme:hover {
+    background-color: #b4befe;
+    transform: translateY(-2px);
+}
+
+/* Footer del ejercicio (tema oscuro) */
+.ejercicio-footer.dark-theme {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ejercicio-footer.dark-theme h4 {
+    color: #f5c2e7;
+    margin-bottom: 10px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}

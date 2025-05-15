@@ -1,0 +1,22 @@
+# <tipo>(<ámbito>): <título corto>
+# |<---- Usar máximo 50 caracteres ---->|
+
+# Explicación detallada, si es necesaria
+# |<---- Intenta limitar cada línea a 72 caracteres ---->|
+
+# --- TIPOS DE COMMIT ---
+# feat:     Nueva característica
+# fix:      Corrección de bug
+# docs:     Documentación
+# style:    Formato (no afecta al código)
+# refactor: Refactorización del código
+# perf:     Mejoras de rendimiento
+# test:     Añadir tests
+# chore:    Cambios en el proceso de build o herramientas
+# ci:       Cambios en integración continua
+
+# --- EJEMPLOS ---
+# feat(auth): añadir página de login
+# fix(navbar): solucionar problema de navegación en móviles
+# docs(readme): actualizar instrucciones de instalación
+# refactor(componentes): simplificar lógica de formularios

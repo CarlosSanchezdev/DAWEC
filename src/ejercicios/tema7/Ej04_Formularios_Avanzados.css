@@ -1,0 +1,403 @@
+/**
+ * Estilos para el ejercicio de Formularios Avanzados
+ */
+
+/* Contenedor principal (tema oscuro) */
+.ejercicio-content.dark-theme {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sección de concepto (tema oscuro) */
+.concepto-section.dark-theme {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.concepto-section.dark-theme h4 {
+    color: #89b4fa;
+    border-bottom: 1px solid #45475a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.concepto-section.dark-theme h5 {
+    color: #a6e3a1;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.concepto-section.dark-theme h6 {
+    color: #f5c2e7;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.concepto-section.dark-theme p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de comparación de formularios (tema oscuro) */
+.comparison-container.dark-theme {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.form-column.dark-theme {
+    flex: 1;
+    min-width: 300px;
+    background-color: #313244;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-description.dark-theme {
+    color: #bac2de;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #45475a;
+}
+
+/* Formulario avanzado (tema oscuro) */
+.advanced-form.dark-theme {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group.dark-theme {
+    margin-bottom: 15px;
+}
+
+.form-group.dark-theme label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cdd6f4;
+}
+
+.form-row.dark-theme {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-row.dark-theme .form-group.dark-theme {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Inputs estilizados (tema oscuro) */
+.form-group.dark-theme input[type="text"],
+.form-group.dark-theme input[type="email"],
+.form-group.dark-theme input[type="date"],
+.form-group.dark-theme input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group.dark-theme input[type="text"]:focus,
+.form-group.dark-theme input[type="email"]:focus,
+.form-group.dark-theme input[type="date"]:focus,
+.form-group.dark-theme input[type="password"]:focus {
+    border-color: #89b4fa;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(137, 180, 250, 0.3);
+}
+
+.form-group.dark-theme input.error,
+.form-group.dark-theme select.error {
+    border-color: #f38ba8;
+}
+
+.error-message.dark-theme {
+    color: #f38ba8;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Color picker container (tema oscuro) */
+.color-picker-container.dark-theme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-picker-container.dark-theme input[type="color"] {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.color-value.dark-theme {
+    font-family: monospace;
+    background-color: #1e1e2e;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Range container (tema oscuro) */
+.range-container.dark-theme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.range-container.dark-theme input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: #45475a;
+    outline: none;
+}
+
+.range-container.dark-theme input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #89b4fa;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.range-container.dark-theme input[type="range"]::-webkit-slider-thumb:hover {
+    background: #b4befe;
+}
+
+.range-value.dark-theme {
+    font-family: monospace;
+    background-color: #1e1e2e;
+    padding: 5px 8px;
+    border-radius: 4px;
+    min-width: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* File input (tema oscuro) */
+.form-group.dark-theme input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e2e;
+    border-radius: 4px;
+    color: #cdd6f4;
+    cursor: pointer;
+}
+
+.form-group.dark-theme input[type="file"]::file-selector-button {
+    background-color: #45475a;
+    color: #cdd6f4;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-group.dark-theme input[type="file"]::file-selector-button:hover {
+    background-color: #585b70;
+}
+
+.file-help.dark-theme {
+    color: #7f849c;
+    font-size: 12px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* File preview (tema oscuro) */
+.file-preview.dark-theme {
+    margin-top: 15px;
+    background-color: #1e1e2e;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px dashed #45475a;
+}
+
+.preview-image.dark-theme {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Form actions (tema oscuro) */
+.form-actions.dark-theme {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-btn.dark-theme {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+    flex: 1;
+}
+
+.submit-btn.dark-theme:hover {
+    background-color: #b4befe;
+    transform: translateY(-2px);
+}
+
+/* Form result (tema oscuro) */
+.form-result.dark-theme {
+    margin-top: 20px;
+    border-top: 1px solid #45475a;
+    padding-top: 15px;
+}
+
+.result-content.dark-theme {
+    background-color: #1e1e2e;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.result-content.dark-theme p {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.result-content.dark-theme strong {
+    color: #89b4fa;
+    min-width: 100px;
+}
+
+.file-details.dark-theme {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #45475a;
+}
+
+/* Form reset section (tema oscuro) */
+.form-reset-section.dark-theme {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.reset-all-btn.dark-theme {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.reset-all-btn.dark-theme:hover {
+    background-color: #eba0ac;
+    transform: translateY(-2px);
+}
+
+/* Code example (tema oscuro) */
+.code-example.dark-theme {
+    margin: 30px 0;
+}
+
+.code-comparison.dark-theme {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.code-column.dark-theme {
+    flex: 1;
+    min-width: 300px;
+}
+
+.code-snippet.dark-theme {
+    background-color: #11111b;
+    color: #89b4fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    border-left: 4px solid #cba6f7;
+    margin-bottom: 20px;
+}
+
+/* File input section (tema oscuro) */
+.file-input-section.dark-theme {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #45475a;
+}
+
+/* Footer del ejercicio (tema oscuro) */
+.ejercicio-footer.dark-theme {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ejercicio-footer.dark-theme h4 {
+    color: #f5c2e7;
+    margin-bottom: 10px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comparison-container.dark-theme {
+        flex-direction: column;
+    }
+
+    .form-row.dark-theme {
+        flex-direction: column;
+    }
+
+    .code-comparison.dark-theme {
+        flex-direction: column;
+    }
+}

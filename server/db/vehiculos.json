@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "numChasis": "23423423",
+        "marca": "Mercedes",
+        "modelo": "234cd",
+        "color": "rojo",
+        "potencia": "150",
+        "fechaFabricacion": "2025-05-01"
+    }
+]

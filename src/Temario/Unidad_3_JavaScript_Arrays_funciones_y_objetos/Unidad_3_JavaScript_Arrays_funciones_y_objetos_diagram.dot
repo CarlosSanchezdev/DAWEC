@@ -1,0 +1,35 @@
+
+digraph G {
+    node [shape=box];
+    "Unidad 3: El lenguaje JavaScript" -> "Funciones";
+    "Unidad 3: El lenguaje JavaScript" -> "Matrices (Arrays)";
+    "Unidad 3: El lenguaje JavaScript" -> "Programación orientada a objetos";
+    "Unidad 3: El lenguaje JavaScript" -> "Patrones de diseño";
+    "Funciones" -> "Funciones predefinidas del lenguaje";
+    "Funciones" -> "Funciones del usuario. Valores de retorno";
+    "Funciones" -> "Definición de funciones. Parámetros. El objeto Function";
+    "Funciones" -> "Valores por defecto para parámetros opcionales";
+    "Funciones" -> "Llamadas a funciones. Funciones llamantes";
+    "Funciones" -> "Ejecutar una función en la carga de una página";
+    "Matrices (Arrays)" -> "Creación de arrays";
+    "Matrices (Arrays)" -> "Tipos de datos en arrays";
+    "Matrices (Arrays)" -> "Manipulación de elementos";
+    "Matrices (Arrays)" -> "Ordenación en matrices";
+    "Matrices (Arrays)" -> "Arrays multidimensionales";
+    "Matrices (Arrays)" -> "Pilas y colas";
+    "Matrices (Arrays)" -> "Operaciones agregadas: recolección, filtrado y reducción";
+    "Matrices (Arrays)" -> "Usar arguments como una matriz";
+    "Matrices (Arrays)" -> "Arrays asociativos (HashTables)";
+    "Matrices (Arrays)" -> "Otros tipos de datos";
+    "Programación orientada a objetos" -> "Conceptos básicos de Programación Orientada a Objetos";
+    "Programación orientada a objetos" -> "Inicialización de objetos en JavaScript";
+    "Programación orientada a objetos" -> "Clases JavaScript";
+    "Programación orientada a objetos" -> "Herencia";
+    "Programación orientada a objetos" -> "La propiedad prototype";
+    "Programación orientada a objetos" -> "Diseño modular";
+    "Programación orientada a objetos" -> "Desestructuración";
+    "Patrones de diseño" -> "Singleton";
+    "Patrones de diseño" -> "Factory (Factoría)";
+    "Patrones de diseño" -> "Strategy (Estrategia)";
+    "Patrones de diseño" -> "Iterator (Iterador)";
+}

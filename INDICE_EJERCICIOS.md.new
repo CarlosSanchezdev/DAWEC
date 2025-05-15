@@ -1,0 +1,215 @@
+# Índice de Ejercicios - Desarrollo Web en Entorno Cliente
+
+Este documento sirve como índice y referencia rápida para todos los ejercicios realizados en preparación para el examen
+de Desarrollo Web en Entorno Cliente.
+
+## Estructura del índice
+
+Para cada ejercicio se incluye:
+
+-   Número e identificador del ejercicio
+-   Ubicación del archivo
+-   Conceptos clave cubiertos
+-   Técnicas/patrones utilizados
+-   Notas importantes para el examen
+
+## Ejercicios por temas
+
+### Tema 1: Fundamentos de React
+
+#### Ejercicio 1: Componentes Funcionales y Props
+
+-   **Archivo**: `src/ejercicios/tema1/Ej01_Componentes_Props.jsx`
+-   **Conceptos**: Componentes funcionales, Props, Destructuring
+-   **Técnicas**: Paso de datos entre componentes, renderizado condicional
+-   **Notas**: Ejemplo básico de componente que recibe y utiliza props
+
+#### Ejercicio 2: Estado con useState
+
+-   **Archivo**: `src/ejercicios/tema1/Ej02_Hooks_useState.jsx`
+-   **Conceptos**: Hook useState, Estado local, Eventos en React
+-   **Técnicas**: Manejo de formularios, actualización de estado
+-   **Notas**: Implementación de contador y formulario simple
+
+### Tema 2: Hooks Avanzados
+
+#### Ejercicio 3: Efectos con useEffect
+
+-   **Archivo**: `src/ejercicios/tema2/Ej03_Hooks_useEffect.jsx`
+-   **Conceptos**: Hook useEffect, Ciclo de vida, Dependencias
+-   **Técnicas**: Llamadas a APIs, limpieza de efectos
+-   **Notas**: Ejemplos de los diferentes casos de uso de useEffect
+
+#### Ejercicio 4: Context API
+
+-   **Archivo**: `src/ejercicios/tema2/Ej04_Context_API.jsx`
+-   **Conceptos**: Context API, useContext, Providers
+-   **Técnicas**: Estado global, composición de providers
+-   **Notas**: Implementación de tema oscuro/claro usando Context
+
+### Tema 3: Enrutamiento y Navegación
+
+#### Ejercicio 5: React Router
+
+-   **Archivo**: `src/ejercicios/tema3/Ej05_React_Router.jsx`
+-   **Conceptos**: React Router, Rutas anidadas, Parámetros
+-   **Técnicas**: Navegación programática, protección de rutas
+-   **Notas**: Ejemplo de aplicación con múltiples páginas
+
+#### Ejercicio 6: Manejo de Navegación
+
+-   **Archivo**: `src/ejercicios/tema3/Ej06_Manejo_Navegacion.jsx`
+-   **Conceptos**: useHistory, useParams, location
+-   **Técnicas**: Redirecciones, paso de parámetros, breadcrumbs
+-   **Notas**: Integración de navegación en la interfaz de usuario
+
+### Tema 4: Formularios y Validación
+
+#### Ejercicio 7: Formularios Controlados
+
+-   **Archivo**: `src/ejercicios/tema4/Ej07_Formularios_Controlados.jsx`
+-   **Conceptos**: Formularios controlados, onChange, onSubmit
+-   **Técnicas**: Actualización de estado, validación en tiempo real
+-   **Notas**: Implementación de formulario de registro con validación
+
+#### Ejercicio 8: Formularios Avanzados
+
+-   **Archivo**: `src/ejercicios/tema4/Ej08_Formularios_Avanzados.jsx`
+-   **Conceptos**: React Hook Form, Yup, Custom hooks
+-   **Técnicas**: Validación esquemática, campos dinámicos
+-   **Notas**: Ejemplo de formulario multi-paso con validación avanzada
+
+### Tema 5: Bibliotecas y Frameworks - React
+
+#### Ejercicio 1: Introducción a React
+
+-   **Archivo**: `src/ejercicios/tema5/Ej01_Introduccion_React.jsx`
+-   **Conceptos**: Virtual DOM, JSX, Componentes, Hooks básicos
+-   **Técnicas**: Estructura de componentes, renderizado
+-   **Notas**: Conceptos fundamentales de React con ejemplos interactivos
+
+#### Ejercicio 2: Componentes y JSX
+
+-   **Archivo**: `src/ejercicios/tema5/Ej02_Componentes_JSX.jsx`
+-   **Conceptos**: Sintaxis JSX, Fragmentos, Variables en JSX, Comentarios, Bucles
+-   **Técnicas**: Creación de componentes, uso de variables en JSX, generación de listas
+-   **Notas**: Explicación detallada de la sintaxis JSX y buenas prácticas
+
+#### Ejercicio 3: Props y Estado
+
+-   **Archivo**: `src/ejercicios/tema5/Ej03_Props_Estado.jsx`
+-   **Conceptos**: Props, Desestructuración, Estado con useState, Funciones como props
+-   **Técnicas**: Paso de datos entre componentes, actualización de estado, comunicación entre componentes
+-   **Notas**: Implementación de contador y comunicación padre-hijo
+
+#### Ejercicio 4: Renderizado Condicional
+
+-   **Archivo**: `src/ejercicios/tema5/Ej04_Renderizado_Condicional.jsx`
+-   **Conceptos**: Operadores condicionales, AND (&&), Operador ternario, IIFE
+-   **Técnicas**: Mostrar/ocultar elementos según condiciones, listas condicionales
+-   **Notas**: Múltiples técnicas para renderizar contenido condicionalmente
+
+#### Ejercicio 5: Visor de Imágenes
+
+-   **Archivo**: `src/ejercicios/tema5/Ej05_Visor_Imagenes.jsx`
+-   **Conceptos**: Composición de componentes, Eventos, Manejo de imágenes
+-   **Técnicas**: Componentes reutilizables, interacción con usuario, navegación
+-   **Notas**: Aplicación práctica que combina varios conceptos de React
+
+### Tema 6: Componentes y Objetos Predefinidos
+
+#### Ejercicio 1: Objetos Nativos
+
+-   **Archivo**: `src/ejercicios/tema6/Ej01_Objetos_Nativos.jsx`
+-   **Conceptos**: Date, Math, String, Array y otros objetos nativos de JavaScript
+-   **Técnicas**: Manipulación de fechas, operaciones matemáticas, métodos de cadenas y arrays
+-   **Notas**: Ejemplos prácticos de uso de objetos nativos en aplicaciones React
+
+#### Ejercicio 2: Objetos del Navegador
+
+-   **Archivo**: `src/ejercicios/tema6/Ej02_Objetos_Navegador.jsx`
+-   **Conceptos**: Window, Location, History, Navigator, temporizadores
+-   **Técnicas**: Interacción con el navegador, eventos de tiempo, detección de características
+-   **Notas**: Integración de objetos del navegador en componentes React
+
+#### Ejercicio 3: Generación de Elementos
+
+-   **Archivo**: `src/ejercicios/tema6/Ej03_Generacion_Elementos.jsx`
+-   **Conceptos**: Generación dinámica de texto y elementos HTML, listas en React
+-   **Técnicas**: Manipulación del DOM con React, renderizado de listas, keys
+-   **Notas**: Patrones para generar elementos de manera eficiente
+
+#### Ejercicio 4: Ventanas y React Router
+
+-   **Archivo**: `src/ejercicios/tema6/Ej04_Ventanas_Router.jsx`
+-   **Conceptos**: Creación de ventanas en JavaScript, navegación con React Router
+-   **Técnicas**: Manejo de múltiples ventanas, comunicación entre ventanas, rutas en React
+-   **Notas**: Comparación de métodos tradicionales y modernos de navegación
+
+#### Ejercicio 5: Estilos y Material-UI
+
+-   **Archivo**: `src/ejercicios/tema6/Ej05_Estilos_MaterialUI.jsx`
+-   **Conceptos**: Gestión de apariencia, CSS en React, Material-UI
+-   **Técnicas**: CSS Modules, Styled Components, theming
+-   **Notas**: Implementación de interfaces con componentes Material-UI
+
+#### Ejercicio 6: Reducers y Context
+
+-   **Archivo**: `src/ejercicios/tema6/Ej06_Reducers_Context.jsx`
+-   **Conceptos**: Gestión de estado con useReducer, Context API, estado global
+-   **Técnicas**: Patrón de acciones y reducers, distribución de estado
+-   **Notas**: Implementación de un mini-Redux con hooks de React
+
+#### Ejercicio 7: Almacenamiento en Navegador
+
+-   **Archivo**: `src/ejercicios/tema6/Ej07_Almacenamiento_Navegador.jsx`
+-   **Conceptos**: Cookies, localStorage, sessionStorage, IndexedDB
+-   **Técnicas**: Persistencia de datos, manejo de preferencias de usuario
+-   **Notas**: Patrones para guardar y recuperar datos en el navegador
+
+#### Ejercicio 8: Depuración y Documentación
+
+-   **Archivo**: `src/ejercicios/tema6/Ej08_Depuracion_Documentacion.jsx`
+-   **Conceptos**: Técnicas de depuración, PropTypes, JSDoc, Error Boundaries
+-   **Técnicas**: Console, React DevTools, documentación de componentes
+-   **Notas**: Mejores prácticas para depuración y mantenimiento de código
+
+## Ejercicios de Examen (Simulacros)
+
+### Simulacro 1: Aplicación de Lista de Tareas
+
+-   **Archivos**: `src/ejercicios/simulacros/sim1/`
+-   **Conceptos**: Combinación de hooks, estado, efectos, contexto
+-   **Técnicas**: CRUD completo, persistencia en localStorage
+-   **Notas**: Implementación completa de aplicación
+
+### Simulacro 2: Dashboard de Datos
+
+-   **Archivos**: `src/ejercicios/simulacros/sim2/`
+-   **Conceptos**: Fetching de datos, visualización, filtrado
+-   **Técnicas**: Gráficos, tablas, búsqueda y filtros
+-   **Notas**: Ejemplo de dashboard con múltiples vistas
+
+## Recursos Adicionales
+
+-   **Patrones de código**: `src/utils/patterns.js`
+-   **Hooks personalizados**: `src/hooks/`
+-   **Componentes reutilizables**: `src/components/common/`
+
+## Comandos útiles
+
+```bash
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Ejecutar pruebas
+npm test
+
+# Construir para producción
+npm run build
+```
+
+---
+
+**Nota**: Este índice se actualizará a medida que se completen más ejercicios. Asegúrate de consultar la versión más
+reciente antes del examen.

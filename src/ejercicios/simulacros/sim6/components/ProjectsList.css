@@ -1,0 +1,193 @@
+/**
+ * @fileoverview Estilos para el componente de listado de proyectos
+ * @ejercicio Simulacro 6 - TaskMaster
+ * @tema UT5, UT6, UT7, UT8
+ * @fecha 15/05/2025
+ */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.search-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    flex: 1;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-md);
+}
+
+.filter-controls {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.filter-group label {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.filter-group select {
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    background-color: white;
+    font-size: var(--font-md);
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.project-card {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    border-top: 5px solid var(--primary-color);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.project-card.status-planning {
+    border-top-color: var(--status-planning);
+}
+
+.project-card.status-in-progress {
+    border-top-color: var(--status-in-progress);
+}
+
+.project-card.status-on-hold {
+    border-top-color: var(--status-on-hold);
+}
+
+.project-card.status-completed {
+    border-top-color: var(--status-completed);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.project-header h3 {
+    margin: 0;
+    font-size: var(--font-lg);
+    color: var(--text-color);
+}
+
+.project-badges {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.project-description {
+    color: var(--text-light);
+    font-size: var(--font-md);
+    line-height: 1.5;
+    flex: 1;
+}
+
+.project-dates {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--space-md);
+}
+
+.date-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.date-group label {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+}
+
+.date-group span {
+    font-weight: 500;
+}
+
+.project-team {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.project-team label {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+}
+
+.team-members {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.team-member-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-sm);
+    font-weight: 500;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--text-light);
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-md);
+}

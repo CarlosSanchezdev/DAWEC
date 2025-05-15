@@ -1,0 +1,28 @@
+
+digraph G {
+    rankdir=LR;
+    node [shape=rectangle];
+    
+    Sentencias [label="Sentencias"];
+    Comentarios [label="Comentarios"];
+    Bloques_Codigo [label="Bloques de Código"];
+    Etiquetas [label="Etiquetas"];
+    Variables [label="Variables"];
+    Conversion_Tipos [label="Conversión de Tipos"];
+    Literales [label="Literales"];
+    Operadores [label="Operadores"];
+    Estructuras_Decision [label="Estructuras de Decisión"];
+    Bucles [label="Bucles"];
+    Prueba_Documentacion [label="Prueba y Documentación"];
+    
+    Sentencias -> Comentarios;
+    Sentencias -> Bloques_Codigo;
+    Etiquetas -> Variables;
+    Etiquetas -> Literales;
+    Etiquetas -> Operadores;
+    Variables -> Conversion_Tipos;
+    Operadores -> Estructuras_Decision;
+    Operadores -> Bucles;
+    Prueba_Documentacion -> Estructuras_Decision;
+    Prueba_Documentacion -> Bucles;
+}

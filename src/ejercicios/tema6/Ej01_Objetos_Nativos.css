@@ -1,0 +1,169 @@
+/**
+ * @fileoverview Estilos para el ejercicio de Objetos Nativos
+ * @ejercicio Ej01_Objetos_Nativos
+ * @tema Tema 6: Componentes y Objetos Predefinidos
+ * @fecha 11/05/2025
+ */
+
+.date-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.date-display {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.date-time {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.clock {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+.date-formats ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.5rem;
+}
+
+.date-formats li {
+    background-color: var(--light-bg);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.date-code-example pre {
+    font-size: 0.85rem;
+    background-color: var(--code-bg);
+    color: var(--code-color);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.math-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.random-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.random-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.random-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.random-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.angle-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.angle-control input {
+    width: 100%;
+}
+
+.calculations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calculation-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.calculation {
+    background-color: var(--light-bg);
+    padding: 0.75rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    flex: 1;
+    text-align: center;
+}
+
+.calculation .label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.calculation .value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.math-constants ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.math-constants li {
+    background-color: var(--light-bg);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .date-formats ul,
+    .math-constants ul {
+        grid-template-columns: 1fr;
+    }
+
+    .calculation-row {
+        flex-direction: column;
+    }
+}

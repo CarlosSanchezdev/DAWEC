@@ -1,0 +1,434 @@
+/**
+ * @fileoverview Estilos CSS para el ejercicio sobre estilos y Material-UI
+ * @ejercicio Ej05_Estilos_MaterialUI
+ * @tema Tema 6: Componentes y Objetos Predefinidos 
+ * @fecha 11/05/2025
+ */
+
+.ejercicio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ejercicio-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+}
+
+.ejercicio-header h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.ejercicio-descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.ejercicio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.concepto-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.concepto-section h4 {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.demo-container {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.demo-container h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.demo-container h6 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin: 15px 0 10px;
+}
+
+.properties-table {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+.properties-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.properties-table th,
+.properties-table td {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: left;
+}
+
+.properties-table th {
+    background-color: #f4f7f9;
+    font-weight: 600;
+}
+
+.properties-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.window-demo {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.code-explanation {
+    margin-top: 25px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.code-snippet {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: "Consolas", monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.style-demo {
+    margin: 20px 0;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* CSS Module Simulation */
+.css-module-simulation {
+    padding: 20px;
+}
+
+.module-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #9c27b0;
+}
+
+.module-title {
+    color: #9c27b0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.module-text {
+    color: #333;
+    line-height: 1.5;
+}
+
+.module-code {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+.module-code code {
+    background-color: #f0f0f0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #9c27b0;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Styled Components Simulation */
+.styled-components-simulation {
+    padding: 20px;
+}
+
+.styled-container {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.styled-container h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.styled-button {
+    background-color: white;
+    color: #3498db;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.styled-button:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+/* Toggle Class Demo */
+.toggle-demo {
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.toggle-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.dark-theme button {
+    background-color: #555;
+}
+
+.dark-theme button:hover {
+    background-color: #777;
+}
+
+.toggle-message {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.light-theme .toggle-message {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.dark-theme .toggle-message {
+    background-color: #1e3a5c;
+    color: #90caf9;
+}
+
+.toggle-message.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toggle-message.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.toggle-explanation {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Material UI Simulation */
+.mui-simulation {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mui-tabs {
+    margin-bottom: 25px;
+}
+
+.mui-tabs-header {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.mui-tab {
+    padding: 12px 16px;
+    background: transparent;
+    color: #777;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.mui-tab.active {
+    color: #3f51b5;
+}
+
+.mui-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3f51b5;
+}
+
+.mui-tabs-content {
+    padding: 16px 0;
+}
+
+.mui-tab-panel {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mui-tab-panel h4 {
+    margin-top: 0;
+    color: #3f51b5;
+    font-size: 1.1rem;
+}
+
+.mui-form {
+    margin-top: 25px;
+}
+
+.mui-textfield {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.mui-textfield label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mui-textfield input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.mui-textfield input:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+.mui-button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.mui-button:hover {
+    background-color: #303f9f;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mui-icon {
+    font-size: 1.2rem;
+}
+
+.ejercicio-footer {
+    margin-top: 40px;
+    border-top: 2px solid #e1e1e1;
+    padding-top: 20px;
+}
+
+.ejercicio-footer h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.ejercicio-footer ul {
+    padding-left: 20px;
+}
+
+.ejercicio-footer li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #e74c3c;
+}

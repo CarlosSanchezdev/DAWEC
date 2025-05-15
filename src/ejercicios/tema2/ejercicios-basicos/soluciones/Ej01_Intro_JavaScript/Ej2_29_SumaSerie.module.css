@@ -1,0 +1,231 @@
+/* Estilos para el componente de Suma de Series */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.codigo {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.codigo h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.codigo pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: "Consolas", monospace;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.button {
+    width: 100%;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+
+.resultado {
+    background-color: #e8f4ff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    animation: aparecer 0.3s ease-out;
+}
+
+.resultado h3 {
+    margin-top: 0;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+.resumenCalculo {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+.formulaGauss {
+    padding-right: 1rem;
+    border-right: 1px solid #eee;
+}
+
+.formulaGauss h4,
+.resultadoFinal h4 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.formulaGauss p {
+    margin: 0;
+    font-family: "Consolas", monospace;
+    color: #0066cc;
+}
+
+.resultadoFinal {
+    text-align: center;
+}
+
+.suma {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066cc;
+    margin: 0;
+}
+
+.pasos {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pasos h4 {
+    margin: 0 0 1rem;
+    color: #333;
+}
+
+.pasosLista {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.paso {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    font-family: "Consolas", monospace;
+}
+
+.paso:last-child {
+    border-bottom: none;
+}
+
+.pasoNumero {
+    color: #0066cc;
+    font-weight: bold;
+    min-width: 70px;
+}
+
+.pasoExpresion {
+    color: #333;
+}
+
+.explicacion {
+    background-color: #e9ecef;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.explicacion h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.explicacion ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.explicacion li {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .resumenCalculo {
+        grid-template-columns: 1fr;
+    }
+
+    .formulaGauss {
+        padding-right: 0;
+        padding-bottom: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .paso {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}

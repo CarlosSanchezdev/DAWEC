@@ -1,0 +1,14 @@
+// Unidad 4: Modelo de objetos del documento (DOM)
+digraph {
+	A [label=Introduction]
+	B [label="How DOM Works"]
+	C [label="Popular DOM Implementations"]
+	D [label="Applications of DOM"]
+	E [label="Limitations and Future of DOM"]
+	F [label=Conclusion]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}

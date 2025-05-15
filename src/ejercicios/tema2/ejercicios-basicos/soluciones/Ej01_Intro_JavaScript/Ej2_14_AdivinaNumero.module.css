@@ -1,0 +1,77 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gameArea {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    min-height: 2em;
+}
+
+.inputArea {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.intentos {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: bold;
+}

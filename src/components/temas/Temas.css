@@ -1,0 +1,305 @@
+/**
+ * @fileoverview Estilos para componentes de temas y ejercicios
+ * @fecha 11/05/2025
+ */
+
+/* Estilos para las páginas de temas */
+.tema-container,
+.simulacros-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tema-header,
+.simulacros-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.back-button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: var(--light-bg);
+}
+
+.tema-description,
+.simulacros-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+.ejercicios-grid,
+.simulacros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.ejercicio-card,
+.simulacro-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.2s;
+}
+
+:root[data-theme="dark"] .ejercicio-card,
+:root[data-theme="dark"] .simulacro-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: var(--color-text);
+}
+
+.ejercicio-card:hover,
+.simulacro-card:hover {
+    transform: translateY(-3px);
+}
+
+.ejercicio-card h3,
+.simulacro-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.ejercicio-card p,
+.simulacro-card p {
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
+
+/* Estilos para tarjetas de simulacros */
+.simulacro-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.simulacro-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.simulacro-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.simulacro-card p {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.unidades-list {
+    background: var(--color-bg-light);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.unidades-list h4 {
+    color: var(--color-text-dark);
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.unidades-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unidades-list li {
+    color: var(--color-text);
+    font-size: 0.85em;
+    padding: 2px 0;
+}
+
+.sin-datos {
+    text-align: center;
+    padding: 20px;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.error-critico {
+    background-color: var(--color-error-bg);
+    color: var(--color-error);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estados de ejercicios/simulacros */
+.estado {
+    font-size: 0.8em;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.estado.completado {
+    background-color: var(--color-success-light);
+    color: var(--color-success);
+}
+
+:root[data-theme="dark"] .estado.completado {
+    background-color: var(--color-success-dark);
+    color: var(--color-success-light);
+}
+
+.estado.pendiente {
+    background-color: var(--color-warning-light);
+    color: var(--color-warning-dark);
+}
+
+:root[data-theme="dark"] .estado.pendiente {
+    background-color: var(--color-warning-dark);
+    color: var(--color-warning-light);
+}
+
+.ejercicio-metadata {
+    background: var(--color-bg-light);
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.ejercicio-metadata.evaluacion {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-left: 3px solid #f59e0b;
+}
+
+:root[data-theme="dark"] .ejercicio-metadata.evaluacion {
+    background-color: #78350f;
+    color: #fef3c7;
+    border-left-color: #f59e0b;
+}
+
+.badge-evaluacion {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #fef3c7;
+    color: #92400e;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+:root[data-theme="dark"] .badge-evaluacion {
+    background-color: #78350f;
+    color: #fef3c7;
+}
+
+:root[data-theme="dark"] .ejercicio-metadata {
+    background: var(--color-dark-elevation-1);
+}
+
+.ejercicio-metadata h4 {
+    color: var(--color-text-dark);
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+:root[data-theme="dark"] .ejercicio-metadata h4 {
+    color: var(--color-text);
+}
+
+.metadata-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.metadata-list li {
+    background: var(--color-white);
+    color: var(--color-text);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    border: 1px solid var(--color-border);
+}
+
+:root[data-theme="dark"] .metadata-list li {
+    background: var(--color-dark-elevation-2);
+    border-color: var(--color-dark-border);
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-text-light);
+}
+
+.ejercicio-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ejercicio-description {
+    color: var(--color-text);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Simulacro específico AVILESA */
+.simulacro-avilesa {
+    background: var(--color-white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.simulacro-avilesa nav {
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .ejercicios-grid,
+    .simulacros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tema-header,
+    .simulacros-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .ejercicio-container {
+        padding: 1rem;
+    }
+}

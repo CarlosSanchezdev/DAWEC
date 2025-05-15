@@ -1,0 +1,348 @@
+/**
+ * Estilos para el ejercicio de Eventos en React
+ */
+
+/* Contenedor principal (tema oscuro) */
+.ejercicio-content.dark-theme {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sección de concepto (tema oscuro) */
+.concepto-section.dark-theme {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.concepto-section.dark-theme h4 {
+    color: #89b4fa;
+    border-bottom: 1px solid #45475a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.concepto-section.dark-theme h5 {
+    color: #a6e3a1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.concepto-section.dark-theme h6 {
+    color: #f5c2e7;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.concepto-section.dark-theme p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Área de juego con eventos (tema oscuro) */
+.event-playground.dark-theme {
+    margin: 20px 0;
+}
+
+.event-canvas.dark-theme {
+    width: 100%;
+    min-height: 300px;
+    background-color: #313244;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.event-canvas.dark-theme:focus {
+    outline: 2px solid #cba6f7;
+    box-shadow: 0 0 0 2px rgba(203, 166, 247, 0.3);
+}
+
+/* Rastreador de posición del ratón (tema oscuro) */
+.mouse-tracker.dark-theme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1e1e2e;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #f9e2af;
+    font-family: monospace;
+    border: 1px solid #45475a;
+}
+
+/* Controles de eventos (tema oscuro) */
+.event-controls.dark-theme {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.draggable-element.dark-theme {
+    width: 200px;
+    height: 60px;
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: move;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+}
+
+.draggable-element.dark-theme:hover,
+.draggable-element.dark-theme:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.drop-zone.dark-theme {
+    width: 200px;
+    height: 100px;
+    background-color: #1e1e2e;
+    border: 2px dashed #45475a;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.drop-zone.dark-theme:hover {
+    border-color: #74c7ec;
+    background-color: rgba(116, 199, 236, 0.1);
+}
+
+.status-indicator.dark-theme {
+    font-size: 14px;
+    color: #a6e3a1;
+    font-weight: bold;
+}
+
+/* Área de teclado (tema oscuro) */
+.keyboard-area.dark-theme {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1e1e2e;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.key-display.dark-theme {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: monospace;
+}
+
+.key-value.dark-theme {
+    color: #f5c2e7;
+    font-weight: bold;
+    background-color: #313244;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 30px;
+}
+
+.key-modifiers.dark-theme {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.key-modifiers.dark-theme span {
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #313244;
+    color: #7f849c;
+}
+
+.key-modifiers.dark-theme span.active {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+.keyboard-hint.dark-theme {
+    color: #7f849c;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Historial de eventos (tema oscuro) */
+.event-history.dark-theme {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #1e1e2e;
+    border-radius: 6px;
+    border: 1px solid #313244;
+    padding: 10px;
+}
+
+.history-header.dark-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #1e1e2e;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.clear-history-btn.dark-theme {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+
+.clear-history-btn.dark-theme:hover {
+    background-color: #eba0ac;
+}
+
+.empty-history.dark-theme {
+    color: #7f849c;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-list.dark-theme {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item.dark-theme {
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    background-color: #181825;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.event-time.dark-theme {
+    color: #cba6f7;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.event-name.dark-theme {
+    color: #a6e3a1;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.event-details.dark-theme {
+    color: #89b4fa;
+    word-break: break-word;
+}
+
+/* Ejemplo de código (tema oscuro) */
+.code-example.dark-theme {
+    margin: 30px 0;
+}
+
+.code-comparison.dark-theme {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.code-column.dark-theme {
+    flex: 1;
+    min-width: 300px;
+}
+
+.code-snippet.dark-theme {
+    background-color: #11111b;
+    color: #89b4fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    border-left: 4px solid #cba6f7;
+    margin-bottom: 20px;
+}
+
+/* Event pooling section (tema oscuro) */
+.event-pooling-section.dark-theme {
+    margin-top: 30px;
+}
+
+.info-box.dark-theme {
+    background-color: #313244;
+    border-left: 4px solid #f9e2af;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.info-box.dark-theme code {
+    background-color: #1e1e2e;
+    color: #f5c2e7;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Footer del ejercicio (tema oscuro) */
+.ejercicio-footer.dark-theme {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #181825;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ejercicio-footer.dark-theme h4 {
+    color: #f5c2e7;
+    margin-bottom: 10px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ejercicio-footer.dark-theme ul.dark-theme li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}

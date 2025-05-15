@@ -1,0 +1,363 @@
+/**
+ * @fileoverview Estilos CSS para el ejercicio sobre generación de elementos
+ * @ejercicio Ej03_Generacion_Elementos
+ * @tema Tema 6: Componentes y Objetos Predefinidos 
+ * @fecha 11/05/2025
+ */
+
+.ejercicio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ejercicio-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+}
+
+.ejercicio-header h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.ejercicio-descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.ejercicio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.concepto-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.concepto-section h4 {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.demo-container {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.demo-container h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    min-width: 200px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.input-group select,
+.input-group input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result-panel {
+    background-color: #f4f7f9;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.result-panel h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.text-output {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.text-output p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.text-output pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.code-explanation {
+    margin-top: 25px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.code-snippet {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: "Consolas", monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.demo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.demo-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.lists-demo {
+    margin-top: 15px;
+}
+
+.simple-list-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.list-controls input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.list-container {
+    min-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.frameworks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.frameworks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.frameworks-list li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.empty-message {
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+.list-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.complex-list-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-controls label {
+    font-weight: 600;
+    color: #555;
+}
+
+.filter-controls input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.people-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.people-table th,
+.people-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.people-table th {
+    background-color: #f4f7f9;
+    font-weight: 600;
+    color: #333;
+}
+
+.people-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.ejercicio-footer {
+    margin-top: 40px;
+    border-top: 2px solid #e1e1e1;
+    padding-top: 20px;
+}
+
+.ejercicio-footer h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.ejercicio-footer ul {
+    padding-left: 20px;
+}
+
+.ejercicio-footer li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+.etiqueta-hora {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.etiqueta-hora p {
+    margin: 0;
+    padding: 0;
+}
+
+.etiqueta-hora small {
+    display: block;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.etiqueta-personalizada {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+}

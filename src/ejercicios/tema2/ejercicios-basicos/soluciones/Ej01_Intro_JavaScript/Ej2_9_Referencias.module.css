@@ -1,0 +1,117 @@
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controles {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.botonEjemplo {
+    background-color: #e9ecef;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    flex: 1;
+    min-width: 200px;
+}
+
+.botonEjemplo:hover {
+    background-color: #dee2e6;
+}
+
+.botonEjemplo.activo {
+    background-color: #0066cc;
+    color: white;
+}
+
+.consola {
+    background-color: #282c34;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.consolaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.consolaHeader h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.limpiarBtn {
+    background-color: #495057;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.limpiarBtn:hover {
+    background-color: #6c757d;
+}
+
+.consolaContenido {
+    font-family: "Consolas", monospace;
+    margin: 0;
+    color: #abb2bf;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.lineaConsola {
+    padding: 0.125rem 0;
+}
+
+.lineaConsola:empty {
+    height: 1em;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #666;
+}
+
+.footer li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .controles {
+        flex-direction: column;
+    }
+
+    .botonEjemplo {
+        width: 100%;
+    }
+}

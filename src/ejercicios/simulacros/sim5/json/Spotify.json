@@ -1,0 +1,124 @@
+{
+	"canciones": [
+		{
+			"id": 1,
+			"nombre": "Bohemian Rhapsody",
+			"artista": "Queen",
+			"album": "A Night at the Opera",
+			"duracion": 354,
+			"popularidad": 98
+		},
+		{
+			"id": 2,
+			"nombre": "Billie Jean",
+			"artista": "Michael Jackson",
+			"album": "Thriller",
+			"duracion": 294,
+			"popularidad": 95
+		},
+		{
+			"id": 3,
+			"nombre": "Hotel California",
+			"artista": "Eagles",
+			"album": "Hotel California",
+			"duracion": 390,
+			"popularidad": 92
+		},
+		{
+			"id": 4,
+			"nombre": "Sweet Child O' Mine",
+			"artista": "Guns N' Roses",
+			"album": "Appetite for Destruction",
+			"duracion": 356,
+			"popularidad": 91
+		},
+		{
+			"id": 5,
+			"nombre": "Smells Like Teen Spirit",
+			"artista": "Nirvana",
+			"album": "Nevermind",
+			"duracion": 301,
+			"popularidad": 94
+		},
+		{
+			"id": 6,
+			"nombre": "Imagine",
+			"artista": "John Lennon",
+			"album": "Imagine",
+			"duracion": 183,
+			"popularidad": 88
+		},
+		{
+			"id": 7,
+			"nombre": "Like a Rolling Stone",
+			"artista": "Bob Dylan",
+			"album": "Highway 61 Revisited",
+			"duracion": 379,
+			"popularidad": 86
+		},
+		{
+			"id": 8,
+			"nombre": "Back in Black",
+			"artista": "AC/DC",
+			"album": "Back in Black",
+			"duracion": 255,
+			"popularidad": 90
+		},
+		{
+			"id": 9,
+			"nombre": "Stairway to Heaven",
+			"artista": "Led Zeppelin",
+			"album": "Led Zeppelin IV",
+			"duracion": 482,
+			"popularidad": 96
+		},
+		{
+			"id": 10,
+			"nombre": "Yesterday",
+			"artista": "The Beatles",
+			"album": "Help!",
+			"duracion": 125,
+			"popularidad": 89
+		},
+		{
+			"id": 11,
+			"nombre": "Hey Jude",
+			"artista": "The Beatles",
+			"album": "The Beatles (White Album)",
+			"duracion": 431,
+			"popularidad": 93
+		},
+		{
+			"id": 12,
+			"nombre": "Let It Be",
+			"artista": "The Beatles",
+			"album": "Let It Be",
+			"duracion": 243,
+			"popularidad": 91
+		},
+		{
+			"id": 13,
+			"nombre": "Come Together",
+			"artista": "The Beatles",
+			"album": "Abbey Road",
+			"duracion": 259,
+			"popularidad": 87
+		},
+		{
+			"id": 14,
+			"nombre": "Purple Haze",
+			"artista": "Jimi Hendrix",
+			"album": "Are You Experienced",
+			"duracion": 171,
+			"popularidad": 85
+		},
+		{
+			"id": 15,
+			"nombre": "Thriller",
+			"artista": "Michael Jackson",
+			"album": "Thriller",
+			"duracion": 357,
+			"popularidad": 97
+		}
+	]
+}

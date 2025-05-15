@@ -1,0 +1,297 @@
+/* Estilos para Ej2_37_CalculadoraRestaurante */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.itemsContainer {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.itemsContainer h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.itemGrupo {
+    display: grid;
+    grid-template-columns: 1fr 120px 80px 40px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nombreInput,
+.precioInput,
+.cantidadInput {
+    padding: 10px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.nombreInput:focus,
+.precioInput:focus,
+.cantidadInput:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    outline: none;
+}
+
+.precioGrupo {
+    position: relative;
+}
+
+.moneda {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #495057;
+}
+
+.precioInput {
+    padding-left: 25px;
+}
+
+.eliminarBtn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.eliminarBtn:hover {
+    background: #c82333;
+}
+
+.agregarBtn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.agregarBtn:hover {
+    background: #218838;
+}
+
+.propinaGrupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.propinaGrupo label {
+    color: #495057;
+    font-weight: 500;
+}
+
+.botonesGrupo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.botonPropina {
+    padding: 8px 16px;
+    border: 2px solid #e9ecef;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 60px;
+}
+
+.botonPropina:hover {
+    border-color: #4a90e2;
+    color: #4a90e2;
+}
+
+.botonPropina.activo {
+    background: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+}
+
+.inputPersonalizado {
+    padding: 10px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.personasGrupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.personasGrupo label {
+    color: #495057;
+    font-weight: 500;
+}
+
+.personasGrupo input {
+    padding: 10px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    width: 150px;
+}
+
+.calcularBtn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.calcularBtn:hover {
+    background: #357abd;
+}
+
+.error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.resultado {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.resultado h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detalleItems {
+    margin-bottom: 20px;
+}
+
+.itemDetalle {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e9ecef;
+}
+
+.itemNombre {
+    color: #495057;
+}
+
+.itemTotal {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.resumenCuenta {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.filaCuenta {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #495057;
+}
+
+.total {
+    border-top: 2px solid #e9ecef;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.totalPorPersona {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .itemGrupo {
+        grid-template-columns: 1fr 100px 60px 40px;
+        font-size: 14px;
+    }
+
+    .botonesGrupo {
+        justify-content: center;
+    }
+
+    .botonPropina {
+        padding: 6px 12px;
+        min-width: 50px;
+    }
+}

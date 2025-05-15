@@ -1,0 +1,152 @@
+/**
+ * Estilos para los ejercicios avanzados del Tema 2
+ */
+
+.ejercicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.volver-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.volver-btn:hover {
+    background-color: #357abd;
+}
+
+.ejercicios-header {
+    margin-bottom: 30px;
+}
+
+.ejercicios-header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.busqueda-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.filtro-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    min-width: 150px;
+}
+
+.bloques-container {
+    display: grid;
+    gap: 30px;
+}
+
+.bloque {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bloque h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ejercicios-range {
+    font-size: 1rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.ejercicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.ejercicio-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ejercicio-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ejercicio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.ejercicio-header h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.ejercicio-id {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.ejercicio-enunciado {
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ejercicio-footer {
+    margin-top: auto;
+}
+
+.conceptos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.concepto-tag {
+    background-color: #e1ecf4;
+    color: #2c5777;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}

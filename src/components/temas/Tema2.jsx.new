@@ -1,0 +1,141 @@
+/**
+ * @fileoverview Componente para mostrar ejercicios del Tema 2: JavaScript Sintaxis Básica
+ * @fecha 14/05/2025
+ */
+
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './Tema2.css';
+
+// Lista de todos los ejercicios del Tema 2
+const ejercicios = [
+  {
+    id: "2.1",
+    titulo: "Hola Mundo JS",
+    enunciado: "Mostrar el mensaje 'Hola mundo JS' en una ventana.",
+    estado: "completado",
+    dificultad: "básica",
+    conceptos: ["alert()", "console.log()"],
+    solucion: "ej01.js",
+  },
+  {
+    id: "2.2",
+    titulo: "Script Externo",
+    enunciado: "Realizar el mismo ejercicio con archivo .js externo.",
+    estado: "completado",
+    dificultad: "básica",
+    conceptos: ["script src", "archivo externo"],
+    solucion: "ej02.js",
+  },
+  {
+    id: "2.3",
+    titulo: "División de Números",
+    enunciado: "Programa para dividir dos números, probar casos especiales.",
+    estado: "completado",
+    dificultad: "media",
+    conceptos: ["operadores", "manejo de errores", "casos especiales"],
+    solucion: "ej03.js",
+  },
+  {
+    id: "2.4",
+    titulo: "Cálculo de Días Vividos",
+    enunciado: "Programa que calcula los días vividos basado en nombre y edad.",
+    estado: "completado",
+    dificultad: "media",
+    conceptos: ["prompt", "cálculos", "alert"],
+    solucion: "ej04.js",
+  },
+  {
+    id: "2.5",
+    titulo: "Multiplicador de Números",
+    enunciado: "Programa que muestra el doble, triple y cuádruple de un número.",
+    estado: "completado",
+    dificultad: "básica",
+    conceptos: ["operadores", "alert", "prompt"],
+    solucion: "ej05.js",
+  }
+];
+
+/**
+ * @function Tema2
+ * @description Componente que muestra los ejercicios del Tema 2: JavaScript Sintaxis Básica
+ * @returns {JSX.Element} Interfaz visual para navegar por los ejercicios del tema
+ */
+function Tema2() {
+  const navigate = useNavigate();
+  const [filtro, setFiltro] = useState('todos');
+  const [busqueda, setBusqueda] = useState('');
+
+  const ejerciciosFiltrados = ejercicios.filter(ejercicio => {
+    const coincideBusqueda = ejercicio.titulo.toLowerCase().includes(busqueda.toLowerCase()) ||
+                            ejercicio.enunciado.toLowerCase().includes(busqueda.toLowerCase());
+    
+    if (filtro === 'todos') return coincideBusqueda;
+    return coincideBusqueda && ejercicio.estado === filtro;
+  });
+
+  return (
+    <div className="tema2-container">
+      <header className="tema-header">
+        <div className="tema-title">
+          <button
+            onClick={() => navigate("/temas")}
+            className="back-button">
+            ← Volver a Temas
+          </button>
+          <h1>Unidad 2: JavaScript Sintaxis Básica</h1>
+        </div>
+        <div className="filtros">
+          <input
+            type="text"
+            placeholder="Buscar ejercicio..."
+            value={busqueda}
+            onChange={(e) => setBusqueda(e.target.value)}
+            className="busqueda-input"
+          />
+          <select 
+            value={filtro} 
+            onChange={(e) => setFiltro(e.target.value)}
+            className="filtro-select"
+          >
+            <option value="todos">Todos</option>
+            <option value="completado">Completados</option>
+            <option value="pendiente">Pendientes</option>
+          </select>
+        </div>
+      </header>
+
+      <div className="ejercicios-grid">
+        {ejerciciosFiltrados.map(ejercicio => (
+          <div key={ejercicio.id} className={`ejercicio-card ${ejercicio.estado}`}>
+            <div className="ejercicio-header">
+              <h3>Ejercicio {ejercicio.id}</h3>
+              <span className={`estado ${ejercicio.estado}`}>
+                {ejercicio.estado}
+              </span>
+            </div>
+            <h4>{ejercicio.titulo}</h4>
+            <p>{ejercicio.enunciado}</p>
+            <div className="ejercicio-footer">
+              <div className="conceptos">
+                {ejercicio.conceptos.map((concepto, index) => (
+                  <span key={index} className="concepto-tag">
+                    {concepto}
+                  </span>
+                ))}
+              </div>
+              <Link 
+                to={`/tema2/ejercicio${ejercicio.id.replace('.', '-')}`}
+                className="btn-ver"
+              >
+                Ver ejercicio
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Tema2;

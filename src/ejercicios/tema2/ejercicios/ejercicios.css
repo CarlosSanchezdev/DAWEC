@@ -1,0 +1,241 @@
+/* Contenedor principal */
+.ejercicios-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header con filtros */
+.ejercicios-header {
+    margin-bottom: 2rem;
+}
+
+.ejercicios-header h1 {
+    color: #1a73e8;
+    margin: 1rem 0;
+}
+
+.filtros {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.busqueda-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.filtro-select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    min-width: 200px;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+}
+
+.nav-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-separator {
+    color: #5f6368;
+    font-size: 1.2rem;
+}
+
+.nav-current {
+    color: #5f6368;
+    font-size: 0.9rem;
+}
+
+/* Progreso global */
+.progreso-global {
+    margin: 1rem 0 2rem;
+}
+
+.progreso-texto {
+    font-size: 1rem;
+    color: #5f6368;
+    margin-bottom: 0.5rem;
+}
+
+.progreso-barra {
+    height: 4px;
+    background-color: #f1f3f4;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progreso-completado {
+    height: 100%;
+    background-color: #1a73e8;
+    transition: width 0.3s ease;
+}
+
+/* Secciones */
+.secciones {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.seccion {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.seccion-header h2 {
+    color: #202124;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.seccion-progreso {
+    color: #5f6368;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #f1f3f4;
+    border-radius: 999px;
+}
+
+/* Grid de ejercicios */
+.ejercicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas de ejercicios */
+.ejercicio-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ejercicio-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ejercicio-card h3 {
+    color: #1a73e8;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.ejercicio-card h4 {
+    margin: 0.5rem 0;
+    color: #202124;
+}
+
+.ejercicio-card p {
+    color: #5f6368;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Estados de ejercicios */
+.estado {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.estado.completado {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+}
+
+.estado.pendiente {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+/* Etiquetas de conceptos */
+.conceptos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.concepto-tag {
+    background-color: #f1f3f4;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: #5f6368;
+}
+
+/* Botón de volver */
+.volver-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f1f3f4;
+    border: none;
+    border-radius: 4px;
+    color: #5f6368;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: #e8eaed;
+}
+
+/* Vista de ejercicio individual */
+.ejercicio-vista {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ejercicios-container {
+        padding: 1rem;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .ejercicios-grid {
+        grid-template-columns: 1fr;
+    }
+}

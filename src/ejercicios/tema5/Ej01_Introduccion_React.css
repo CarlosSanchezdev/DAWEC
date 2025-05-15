@@ -1,0 +1,154 @@
+/* Estilos para el ejercicio de introducción a React */
+
+.ejercicio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ejercicio-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 10px;
+}
+
+.ejercicio-header h3 {
+    font-size: 1.8rem;
+    color: #0366d6;
+    margin-bottom: 10px;
+}
+
+.ejercicio-descripcion {
+    font-size: 1.1rem;
+    color: #586069;
+    line-height: 1.5;
+}
+
+.ejercicio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.concepto-section {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 20px;
+    border: 1px solid #e1e4e8;
+}
+
+.concepto-section h4 {
+    font-size: 1.3rem;
+    color: #24292e;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 8px;
+}
+
+.component-demo,
+.virtual-dom-demo,
+.jsx-demo,
+.hooks-demo {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px dashed #d1d5da;
+}
+
+.componente-simple {
+    display: inline-block;
+    background-color: #f1f8ff;
+    border: 1px solid #c8e1ff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.counter-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #24292e;
+    margin-bottom: 5px;
+}
+
+.render-time {
+    font-size: 0.9rem;
+    color: #6a737d;
+    margin-bottom: 15px;
+}
+
+.counter-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.counter-controls button {
+    padding: 8px 16px;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.counter-controls button:hover {
+    background-color: #0257b5;
+}
+
+.jsx-demo pre {
+    background-color: #2d333b;
+    color: #adbac7;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.hook-demo-container {
+    padding: 15px;
+    background-color: #f0fff4;
+    border: 1px solid #b6e3c3;
+    border-radius: 4px;
+}
+
+.hook-demo-container button {
+    padding: 8px 16px;
+    background-color: #2da44e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.hook-demo-container button:hover {
+    background-color: #238636;
+}
+
+.ejercicio-footer {
+    margin-top: 40px;
+    background-color: #fffbdd;
+    border: 1px solid #eae5cd;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.ejercicio-footer h4 {
+    color: #735c0f;
+    margin-bottom: 10px;
+}
+
+.ejercicio-footer ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    color: #24292e;
+}
+
+.ejercicio-footer li {
+    margin-bottom: 5px;
+}

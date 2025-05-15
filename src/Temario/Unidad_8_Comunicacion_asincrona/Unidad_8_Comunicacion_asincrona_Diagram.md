@@ -1,0 +1,17 @@
+
+graph TD;
+    A[Comunicación Asíncrona] --> B[Bucle de eventos]
+    A --> C[Pila de ejecución]
+    A --> D[Cola de eventos]
+    A --> E[Programación asíncrona]
+    E --> F[Ajax]
+    E --> G[XMLHttpRequest]
+    E --> H[Métodos HTTP]
+    E --> I[Funciones callback]
+    E --> J[Promesas]
+    E --> K[API Fetch]
+    E --> L[Async / Await]
+    A --> M[Programación de aplicaciones]
+    M --> N[XMLHttpRequest con XML]
+    M --> O[Promesas]
+    M --> P[Aplicación de notas]
